@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 
 const app = express();
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
 
 mongoose.connect("mongodb://localhost:27017/ecommerceDB");
 
